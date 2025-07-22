@@ -7,3 +7,19 @@ body{
 main{
     flex-grow:1 ;
 }
+
+/* transicion de color */
+
+.item{
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+     transition-property: background-color;
+     transition-duration: 600ms;
+     transition-timing-function: linear;
+     transition-delay: 100ms;
+}
+
+.item:hover{
+    background-color: lightblue;  
+}
