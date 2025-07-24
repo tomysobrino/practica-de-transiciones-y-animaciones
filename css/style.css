@@ -23,3 +23,12 @@ main{
 .item:hover{
     background-color: lightblue;  
 }
+
+.parrafo-amplio{
+    transition: font-size 300ms ease-out;
+}
+
+.parrafo-amplio:hover{
+    font-size: larger;
+    cursor: pointer;
+}
