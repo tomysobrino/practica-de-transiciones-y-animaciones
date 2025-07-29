@@ -1,123 +1,167 @@
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-main{
-    flex-grow:1 ;
+main {
+  flex-grow: 1;
 }
 
 /* transicion de color */
 
-.item{
-    background-color: tomato;
-    width: 200px;
-    height: 200px;
-     transition-property: background-color;
-     transition-duration: 600ms;
-     transition-timing-function: linear;
-     transition-delay: 100ms;
+.item {
+  background-color: tomato;
+  width: 200px;
+  height: 200px;
+  transition-property: background-color;
+  transition-duration: 600ms;
+  transition-timing-function: linear;
+  transition-delay: 100ms;
 }
 
-.item:hover{
-    background-color: lightblue;  
+.item:hover {
+  background-color: lightblue;
 }
 
-.parrafo-amplio{
-    transition: font-size 300ms ease-out;
+.parrafo-amplio {
+  transition: font-size 300ms ease-out;
 }
 
-.parrafo-amplio:hover{
-    font-size: larger;
-    cursor: pointer;
+.parrafo-amplio:hover {
+  font-size: larger;
+  cursor: pointer;
 }
 
-.item-opacidad{
-    width: 200px;
-    height: 100px;
-    background-color: blueviolet;
-    opacity: 0.5;
-    transition: opacity 200ms ease-in-out;
+.item-opacidad {
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+  opacity: 0.5;
+  transition: opacity 200ms ease-in-out;
 }
 
-.item-opacidad:hover{
-    opacity: 1;
+.item-opacidad:hover {
+  opacity: 1;
 }
 
-.item-subrayado{
-    position: relative;
-    display: inline-block;
-    
+.item-subrayado {
+  position: relative;
+  display: inline-block;
 }
 
-.item-subrayado::after{
-content: "";
-position: absolute;
-left: 0;
-bottom: -5px;
-width: 0%;
-background-color: chartreuse;
-height: 2px;
-transition: width 250ms ease-in;
-
+.item-subrayado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  background-color: chartreuse;
+  height: 2px;
+  transition: width 250ms ease-in;
 }
 
-.item-subrayado:hover::after{
-width: 100%;
+.item-subrayado:hover::after {
+  width: 100%;
 }
 /*animacion de movimiento*/
 
-.contenedor-animado{
-    width: 150px;
-    height: 50px;
-    background-color: lightblue;
-    color: black;
-    animation-name: movimiento;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.contenedor-animado {
+  width: 150px;
+  height: 50px;
+  background-color: lightblue;
+  color: black;
+  animation-name: movimiento;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 @keyframes movimiento {
-    from{
-        /*aqui nombro los valores de css que quiero qwue tenga la animacion en el inicio*/
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(200px);
-    }
-    
+  from {
+    /*aqui nombro los valores de css que quiero qwue tenga la animacion en el inicio*/
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
 }
 
 /*animacion de rotacion*/
 
-.parrafo-rotado{
-    animation: rotacion 2s linear 1s infinite;
+.parrafo-rotado {
+  animation: rotacion 2s linear 1s infinite;
 }
 
-@keyframes rotacion{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.escala-mundo{
-    animation: escalar 3s ease infinite alternate;
+.escala-mundo {
+  animation: escalar 3s ease infinite alternate;
 }
 
-@keyframes escalar{
-    0%{
-        transform: scale(1);
-    }
-    30%{
-        transform: scale(1.7)
-    }
-    100%{
-        transform: scale(0.5);
-    }
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.contenedor-principal {
+  width: 250px;
+  height: 250px;
+}
+.circulo {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(109, 109, 229);
+  border-radius: 50%;
+  position: relative;
+  animation: animacion-compleja 4s ease infinite;
+  transition: border-radius 200ms linear;
+}
+
+.circulo:hover {
+  border-radius: 0%;
+}
+
+@keyframes animacion-compleja {
+  0% {
+    top: 0px;
+    left: 0px;
+    background-color: blueviolet;
+  }
+  25% {
+    top: 0px;
+    left: 100px;
+    background-color: rgb(84, 9, 154);
+  }
+
+  50% {
+    top: 100px;
+    left: 100px;
+    background-color: rgb(4, 4, 132);
+  }
+  75% {
+    top: 100px;
+    left: 0px;
+    background-color: rgb(91, 91, 247);
+  }
+  100% {
+    top: 100px;
+    right: 0px;
+    background-color: blue;
+  }
 }
