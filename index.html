@@ -79,7 +79,7 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="container my-4">
       <section class="my-4">
         <h1 class="text-center">practica de trensiciones y animaciones</h1>
         <article class="mt-4">
@@ -163,7 +163,54 @@
             para crear efectos de desplazamiento o para animar elementos en
             respuesta a interacciones del usuario.
           </p>
-          <p class="item-subrayado">este texto se subraya cuando pasamos el mouse por arriba</p>
+          <p class="item-subrayado">
+            este texto se subraya cuando pasamos el mouse por arriba
+          </p>
+        </article>
+        <article>
+          <h2>animaciones</h2>
+          <p>
+            Permiten que los elementos cambien de estilo en varios estados
+            definidos mediante @keyframes.
+          </p>
+          <h3>Propiedades básicas de las animaciones</h3>
+          <ul>
+            <li>
+              animation-name: Especifica el nombre de la animación (definido en
+              @keyframes).
+            </li>
+            <li>animation-duration: Establece la duración de la animación.</li>
+            <li>
+              animation-timing-function: Define la curva de velocidad de la
+              animación.
+            </li>
+            <li>
+              animation-iteration-count: Indica cuántas veces se repetirá la
+              animación
+            </li>
+            <li>
+              animation-direction: Define si la animación debe invertirse en
+              cada ciclo.
+            </li>
+            <li>
+              animation-fill-mode: Establece cómo se aplica el estilo a los
+              elementos antes y después de la animación.
+            </li>
+          </ul>
+          <h3>animación de movimiento</h3>
+          <p>
+            La animación de movimiento en CSS utiliza la propiedad transform
+            junto con @keyframes para mover elementos a lo largo del eje X o Y,
+            creando un efecto de desplazamiento. Este tipo de animación es ideal
+            para captar la atención del usuario y hacer que la interfaz sea más
+            dinámica. Por ejemplo, un cuadro puede moverse horizontalmente de un
+            lado a otro de la pantalla, lo que puede usarse para destacar
+            información o guiar la mirada del usuario hacia un elemento
+            importante.
+          </p>
+          <div class="contenedor-animado d-flex justify-content-center align-items-center">
+            <p class="fw-bold">movimiento 🚗</p>
+          </div>
         </article>
       </section>
     </main>
