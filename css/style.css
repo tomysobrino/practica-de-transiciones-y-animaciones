@@ -44,3 +44,25 @@ main{
 .item-opacidad:hover{
     opacity: 1;
 }
+
+.item-subrayado{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.item-subrayado::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 0%;
+background-color: chartreuse;
+height: 2px;
+transition: width 250ms ease-in;
+
+}
+
+.item-subrayado:hover::after{
+width: 100%;
+}
