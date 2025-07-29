@@ -79,7 +79,7 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="container my-4">
       <section class="my-4">
         <h1 class="text-center">practica de trensiciones y animaciones</h1>
         <article class="mt-4">
@@ -164,8 +164,99 @@
             respuesta a interacciones del usuario.
           </p>
           <p class="item-subrayado">
+            
             este texto se subraya cuando pasamos el mouse por arriba
+          
           </p>
+        </article>
+        <article>
+          <h2>animaciones</h2>
+          <p>
+            Permiten que los elementos cambien de estilo en varios estados
+            definidos mediante @keyframes.
+          </p>
+          <h3>Propiedades básicas de las animaciones</h3>
+          <ul>
+            <li>
+              animation-name: Especifica el nombre de la animación (definido en
+              @keyframes).
+            </li>
+            <li>animation-duration: Establece la duración de la animación.</li>
+            <li>
+              animation-timing-function: Define la curva de velocidad de la
+              animación.
+            </li>
+            <li>
+              animation-iteration-count: Indica cuántas veces se repetirá la
+              animación
+            </li>
+            <li>
+              animation-direction: Define si la animación debe invertirse en
+              cada ciclo.
+            </li>
+            <li>
+              animation-fill-mode: Establece cómo se aplica el estilo a los
+              elementos antes y después de la animación.
+            </li>
+          </ul>
+          <h3>animación de movimiento</h3>
+          <p>
+            La animación de movimiento en CSS utiliza la propiedad transform
+            junto con @keyframes para mover elementos a lo largo del eje X o Y,
+            creando un efecto de desplazamiento. Este tipo de animación es ideal
+            para captar la atención del usuario y hacer que la interfaz sea más
+            dinámica. Por ejemplo, un cuadro puede moverse horizontalmente de un
+            lado a otro de la pantalla, lo que puede usarse para destacar
+            información o guiar la mirada del usuario hacia un elemento
+            importante.
+          </p>
+          <div
+            class="contenedor-animado d-flex justify-content-center align-items-center"
+          >
+            <p class="fw-bold">movimiento 🚗</p>
+          </div>
+        </article>
+        <article>
+          <h2>animación de rotacion</h2>
+          <p>
+            La animación de rotación permite que un elemento gire alrededor de
+            su centro, utilizando la propiedad transform: rotate() en
+            combinación con @keyframes. Este efecto es especialmente útil para
+            añadir dinamismo a elementos como iconos, botones o gráficos,
+            sugiriendo acción o cambio. Por ejemplo, un ícono de carga puede
+            rotar continuamente para indicar que un proceso está en curso, o un
+            elemento gráfico puede girar como parte de una animación decorativa.
+          </p>
+
+          <p class="fs-1 d-lg-inline-block parrafo-rotado">⏳</p>
+        </article>
+        <article>
+          <h2>animacion de estacala</h2>
+          <p>
+            La animación de escala modifica el tamaño de un elemento, haciéndolo
+            crecer o encogerse mediante la propiedad transform: scale(). Esto
+            puede utilizarse para enfatizar un elemento o indicar
+            interactividad. Por ejemplo, un botón o una imagen puede ampliarse
+            al pasar el cursor sobre él, sugiriendo que es clickeable o que
+            tiene más información disponible. La animación de escala es eficaz
+            para dirigir la atención del usuario de manera sutil pero efectiva.
+          </p>
+          <div class="fs-1 d-inline-block escala-mundo">🌍</div>
+        </article>
+        <article>
+          <h2>efecto complejo</h2>
+          <p>
+            Las animaciones con efectos complejos combinan múltiples
+            transformaciones y propiedades CSS para crear interacciones visuales
+            más sofisticadas. Esto puede incluir la combinación de movimientos,
+            rotaciones, cambios de color y escala, sincronizados para crear una
+            experiencia fluida y atractiva. Por ejemplo, una tarjeta informativa
+            puede moverse ligeramente hacia arriba, rotar y cambiar de color
+            mientras se amplía, todo en una sola animación. Estos efectos son
+            ideales para interfaces de usuario avanzadas, donde el objetivo es
+            crear una experiencia inmersiva y memorable para el usuario.
+          </p>
+          <div class="border contenedor-principal circulo"></div>
         </article>
         <article>
           <h2>animaciones</h2>
